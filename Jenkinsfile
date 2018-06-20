@@ -6,7 +6,9 @@ node {
 	}
 	
 	stage('maven'){
-		sh "mvn clean install sonar:sonar"
+		withSonarQubeEnv('Sonar server'){
+			sh "mvn clean install sonar:sonar"
+		}
 	}
 	
 	stage('quality gate'){
