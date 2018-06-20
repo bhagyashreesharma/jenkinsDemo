@@ -1,6 +1,8 @@
 node {
 	stage('git'){
-		checkout scm
+		git branch: 'master',
+   		credentialsId: 'gitcredentialid',
+    	url: 'https://github.com/bhagyashreesharma/jenkinsDemo.git'
 	}
 	
 	stage('maven'){
