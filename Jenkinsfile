@@ -8,4 +8,12 @@ node {
 	stage('maven'){
 		sh "mvn clean install sonar:sonar"
 	}
+	
+	stage('quality gate'){
+		steps{
+			timeout(time:2, unit:'MINUTES'){
+			waitForQualityGate abortPipeline:true
+			}
+		}
+	}
 }
