@@ -6,7 +6,7 @@ node {
 	}
 	
 	stage('maven'){
-		withSonarQubeEnv('Sonar server'){
+		withSonarQubeEnv('localhost_sonar'){
 			sh "mvn clean install sonar:sonar"
 		}
 	}
