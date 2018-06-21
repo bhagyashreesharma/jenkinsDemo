@@ -8,7 +8,7 @@ public class TestClass {
 	private static final String name = "Bhagyashree";
 	public static void main(String[] args) {
 		String str = getString();
-		logger.info("String response : "+str);
+		logger.info(str);
 	}
 	
 	public static String getString() {
