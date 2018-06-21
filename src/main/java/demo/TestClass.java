@@ -5,14 +5,14 @@ import java.util.logging.Logger;
 public class TestClass {
 
 	static Logger logger = Logger.getLogger("TestClass");
-	private static final String name = "Bhagyashree";
+	private static final String NAME = "Bhagyashree";
 	public static void main(String[] args) {
 		String str = getString();
 		logger.info(str);
 	}
 	
 	public static String getString() {
-		return name;
+		return NAME;
 	}
 	
 }
