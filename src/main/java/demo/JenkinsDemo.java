@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 /*
  * This is TestClass for jenkins demo
  */
-public class TestClass {
+public class JenkinsDemo {
 
 	static Logger logger = Logger.getLogger("TestClass");
 	private static final String NAME = "Bhagyashree";
