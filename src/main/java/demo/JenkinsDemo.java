@@ -10,7 +10,8 @@ public class JenkinsDemo {
 	private static final String NAME = "Bhagyashree";
 	
 	/**
-	 * This method is logging string
+	 * This method is calling getString() method
+	 * and logging string received by method
 	 * @param args
 	 */
 	public static void main(String[] args) {
