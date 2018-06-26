@@ -6,7 +6,7 @@ import java.util.logging.Logger;
  */
 public class JenkinsDemo {
 
-	static Logger logger = Logger.getLogger("TestClass");
+	static Logger logger = Logger.getLogger("JenkinsDemo");
 	private static final String NAME = "Bhagyashree";
 	
 	/**
