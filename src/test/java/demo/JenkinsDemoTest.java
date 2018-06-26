@@ -17,6 +17,6 @@ public class JenkinsDemoTest {
  */
 @Test
 public void test() {
-	Assert.assertEquals("Bhagyashree Sharma", JenkinsDemo.getString());
+	Assert.assertEquals("Bhagyashree", JenkinsDemo.getString());
 }
 }
