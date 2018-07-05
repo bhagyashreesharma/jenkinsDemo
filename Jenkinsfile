@@ -21,6 +21,6 @@ node {
 			}
 	}
 	}catch(err){
-		emailext body: ${err}, subject: 'Jenkins email', to: 'bhagyashreesharma90@gmail.com'
+		emailext body: "${err}", subject: 'Jenkins email', to: 'bhagyashreesharma90@gmail.com'
 	}
 }
