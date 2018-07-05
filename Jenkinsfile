@@ -1,4 +1,5 @@
 node {
+	try{
 	stage('git'){
 		git branch: 'master',
    		credentialsId: 'gitcredentialid',
@@ -18,5 +19,8 @@ node {
             		 error "Pipeline aborted due to quality gate failure: ${qg.status}"
            		}
 			}
+	}
+	}catch(err){
+		emailext body: ${err}, subject: 'Jenkins email', to: 'bhagyashreesharma90@gmail.com'
 	}
 }
